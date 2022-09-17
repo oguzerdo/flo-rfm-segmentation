@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import datetime as dt
 
 def create_rfm(dataframe):
-    # Veriyi Hazırlma
+    # Data Processing
     dataframe["order_num_total"] = dataframe["order_num_total_ever_online"] + dataframe["order_num_total_ever_offline"]
     dataframe["customer_value_total"] = dataframe["customer_value_total_ever_offline"] + dataframe["customer_value_total_ever_online"]
     date_columns = dataframe.columns[dataframe.columns.str.contains("date")]
     dataframe[date_columns] = dataframe[date_columns].apply(pd.to_datetime)
 
 
-    # RFM METRIKLERININ HESAPLANMASI
+    # Preparing RFM Metrics
     dataframe["last_order_date"].max()  # 2021-05-30
     analysis_date = dt.datetime(2021, 6, 1)
     rfm = pd.DataFrame()
@@ -19,7 +19,7 @@ def create_rfm(dataframe):
     rfm["frequency"] = dataframe["order_num_total"]
     rfm["monetary"] = dataframe["customer_value_total"]
 
-    # RF ve RFM SKORLARININ HESAPLANMASI
+    # Calculating RFM Scores
     rfm["recency_score"] = pd.qcut(rfm['recency'], 5, labels=[5, 4, 3, 2, 1])
     rfm["frequency_score"] = pd.qcut(rfm['frequency'].rank(method="first"), 5, labels=[1, 2, 3, 4, 5])
     rfm["monetary_score"] = pd.qcut(rfm['monetary'], 5, labels=[1, 2, 3, 4, 5])
@@ -27,7 +27,7 @@ def create_rfm(dataframe):
     rfm["RFM_SCORE"] = (rfm['recency_score'].astype(str) + rfm['frequency_score'].astype(str) + rfm['monetary_score'].astype(str))
 
 
-    # SEGMENTLERIN ISIMLENDIRILMESI
+    # Preparing Segments Map
     seg_map = {
         r'[1-2][1-2]': 'hibernating',
         r'[1-2][3-4]': 'at_Risk',
