@@ -42,6 +42,12 @@ pandas==1.4.3
 ```
 
 ---
+# Files
 
+[*FLO_RFM.ipynb*](https://github.com/oguzerdo/flo-rfm-segmentation/blob/main/FLO_RFM.ipynb) - FLO RFM Notebook
+
+[*app.py*](https://github.com/oguzerdo/flo-rfm-segmentation/blob/main/app.py) - FLO RFM Python Script
+
+---
 # Author 
 Oğuz Erdoğan
