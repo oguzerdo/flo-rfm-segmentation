@@ -4,7 +4,7 @@
 
 # Business Problem
 
-[FLO](https://www.flo.com.tr) is an online and large e-commerce site in Turkey.
+[FLO](https://www.flo.com.tr) is a large e-commerce site in Turkey.
 
  FLO wants to segment its customers and determine marketing strategies according to these segments.
 
