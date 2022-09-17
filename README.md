@@ -4,7 +4,7 @@
 
 # Business Problem
 
-FLO wants to segment its customers and determine marketing strategies according to these segments.
+[FLO](https://www.flo.com.tr) wants to segment its customers and determine marketing strategies according to these segments.
 
 To this end, customers' behaviors will be defined and groups will be formed according to the clusters in these behaviors.
 
