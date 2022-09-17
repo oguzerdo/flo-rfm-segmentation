@@ -1,6 +1,6 @@
 # FLO RFM Segmentation
 
-![images](/images/project.png)
+![images](/images/projects.png)
 
 # Business Problem
 
@@ -38,3 +38,8 @@ To this end, customers' behaviors will be defined and groups will be formed acco
 matplotlib==3.5.2
 pandas==1.4.3
 ```
+
+---
+
+# Author 
+Oğuz Erdoğan
