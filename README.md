@@ -1,6 +1,6 @@
 # FLO RFM Segmentation
 
-![Untitled](FLO%20RFM%20Segmentation%20fb0795711b814bdeb4c49724084470b4/Untitled.png)
+![images](/images/project.png)
 
 # Business Problem
 
