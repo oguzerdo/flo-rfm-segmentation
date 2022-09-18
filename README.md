@@ -10,7 +10,6 @@
 
 To this end, customers' behaviors will be defined and groups will be formed according to the clusters in these behaviors.
 
----
 
 # Dataset Info
 
@@ -32,7 +31,6 @@ To this end, customers' behaviors will be defined and groups will be formed acco
 | customer_value_total_ever_online | Total fees paid for the customer's online purchases |
 | interested_in_categories_12 | List of categories the customer has shopped in the last 12 months |
 
----
 
 # Requirements
 
@@ -41,13 +39,11 @@ matplotlib==3.5.2
 pandas==1.4.3
 ```
 
----
 # Files
 
 [*FLO_RFM.ipynb*](https://github.com/oguzerdo/flo-rfm-segmentation/blob/main/FLO_RFM.ipynb) - FLO RFM Notebook
 
 [*app.py*](https://github.com/oguzerdo/flo-rfm-segmentation/blob/main/app.py) - FLO RFM Python Script
 
----
 # Author 
 Oğuz Erdoğan
